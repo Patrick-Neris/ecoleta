@@ -1,0 +1,70 @@
+@media (max-width: 900px) {
+
+    #page-home {
+        background-position: left;
+    }
+    #page-home .content {
+        align-items: center;
+        text-align: center;
+    }
+
+    #page-home header a {
+        position: absolute;
+        bottom: 48px;
+        color: black;
+
+        left: 50%;
+        transform: translateX(-50%)
+    }
+
+    #page-home main {
+        align-items: center;
+    }
+
+    #page-search-results .cards {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #page-create-point .field-group {
+        flex-direction: column;
+    }
+
+    #page-create-point .field-group .field+.field {
+        margin-left: 0;
+    }
+
+    #page-create-point form fieldset .items-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #page-create-point form button {
+        margin-bottom: 24px;
+    }
+}
+
+@media (max-width: 480px) {
+    #page-home main p {
+        font-size: 20px;
+        line-height: 30px;
+        margin-top: 30px;
+    }
+    #page-home main h1 {
+        font-size: 36px;
+    }
+    #page-home header a span {
+        width: 30px;
+        height: 30px;
+    }
+
+    #page-search-results .cards {
+        grid-template-columns: 1fr;
+    }
+} 
+
+@media (min-width: 1700px) {
+    #page-home {
+        background: url(../assets/recycle-bin.svg) no-repeat;
+        background-position: 60vw center;
+        background-size: 20vw 20vh;   
+    }   
+}
